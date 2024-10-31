@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { toast } from "react-hot-toast";
 
-const API_BASE_URL = "https://vercel.com/dilshand3s-projects/dilshan-portfolio-backend/BoHuRWwqxVjHXcdB8Fh9JBEXmu3s/api"; // Define the base URL
+const API_BASE_URL = "http://localhost:3131/api"; // Define the base URL
 
 export const useAuth = create((set, get) => ({
     githubURL: "https://github.com/dilshand3",
