@@ -2,7 +2,7 @@ import React from 'react'
 import SkillTube from '../SkillTube/SkillTube'
 import Node from '../Icon/Node'
 import ExpressIcon from '../Icon/Express'
-import MongoDB from '../Icon/MongoDB'
+import MongoDB from '../Icon/MongoDB.jsx'
 
 const BackendSkill = () => {
     return (
