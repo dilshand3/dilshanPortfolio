@@ -1,0 +1,51 @@
+.project-form {
+    background-color: var(--dark-grey-color);
+    width: max-content;
+    margin: auto;
+    text-align: center;
+    padding: 15px 15px 25px 15px;
+    border-radius: 16px;
+    margin-top: 20px;
+    height: max-content;
+    margin-bottom: 20px;
+}
+
+.project-form h1 {
+    color: var(--purple-color);
+    font-size: 18px;
+}
+
+.project-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.project-input {
+    background-color: var(--darkbg-color);
+    border: none;
+    color: whitesmoke;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.AddProjectBtn {
+    background-color: var(--purple-color);
+    color: var(--darkbg-color);
+    padding: 5px 15px;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid var(--purple-color);
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.AddProjectBtn:hover {
+    background-color: var(--darkbg-color);
+    color: var(--purple-color);
+}

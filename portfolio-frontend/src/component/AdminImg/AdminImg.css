@@ -1,0 +1,31 @@
+.AdminImgContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.AdminImg-container {
+    background-color: var(--dark-grey-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 5px;
+    margin-top: 10px;
+    border-radius: 16px;
+}
+
+.AdminImgBtn {
+    padding: 2px 10px;
+    border: 2px solid var(--purple-color);
+    background: transparent;
+    color: var(--purple-color);
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 3px;
+}
+
+.AdminImgBtn:hover {
+    background-color: var(--purple-color);
+    color: var(--darkbg-color);
+}

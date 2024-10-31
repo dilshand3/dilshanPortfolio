@@ -1,0 +1,99 @@
+.email-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(0.3px);
+    backdrop-filter: blur(0.3px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.email-verification-container {
+    max-width: 400px;
+    width: 100%;
+    background-color: var(--darkbg-color);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.email-verification-content {
+    padding: 20px;
+}
+
+.email-verification-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+    color: var(--purple-color);
+}
+
+.email-verification-description {
+    text-align: center;
+    color: #d1d5db;
+    margin-bottom: 16px;
+}
+
+.email-verification-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.email-verification-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.email-verification-input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #374151;
+    color: #ffffff;
+    border: 2px solid #4b5563;
+    border-radius: 8px;
+    outline: none;
+}
+
+.email-verification-input:focus {
+    border-color: var(--purple-color);
+}
+
+.email-verification-error {
+    color: #f87171;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.email-verification-button {
+    width: 100%;
+    background-color: var(--purple-color);
+    color: #ffffff;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.email-verification-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

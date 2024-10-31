@@ -1,0 +1,58 @@
+.project {
+    margin-top: 50px;
+}
+
+.project small {
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.button-container button {
+    background-color: transparent;
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.button-container button.active {
+    background-color: var(--purple-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--darkbg-color);
+}
+
+.project-section {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(autofill, minmax(330px, 1fr));
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-out, transform 0.6s ease-out;
+}
+
+.project-section.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* this code is uiux project and app project file of project */
+.project-comingSoon {
+    text-align: center;
+    color: var(--grey-color);
+    font-size: 60px;
+}
+
+@media only screen and (max-width:750px) {
+    .project-comingSoon {
+        font-size: 9vw;
+    }
+}

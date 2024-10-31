@@ -1,0 +1,85 @@
+.contact {
+    margin-top: 50px;
+    padding-bottom: 60px;
+}
+
+.contact small {
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.contact-container h2 {
+    color: var(--white-color);
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 50px;
+    position: relative;
+    margin-top: 24px;
+}
+
+.form-container form>input {
+    min-width: 300px;
+    width: 360px;
+    background: transparent;
+    border: 2px solid var(--grey-color);
+    padding: 15px 20px;
+    color: var(--grey-color);
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-container textarea {
+    background-color: transparent;
+    min-width: 300px;
+    width: 360px;
+    border: 3px solid var(--grey-color);
+    padding: 15px 20px;
+    border-radius: 10px;
+    height: 250px;
+    color: var(--grey-color);
+    font-size: 16px;
+    resize: none;
+    outline: none;
+}
+
+.form-container textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.form-container button {
+    position: absolute;
+    background-color: var(--purple-color);
+    color: var(--darkbg-color);
+    border-radius: 10px;
+    font-weight: bold;
+    height: 50px;
+    cursor: pointer;
+    bottom: -70px;
+    padding: 10px 20px;
+    transition: 0.2s;
+    left: 0;
+}
+
+.contact-container button:hover {
+    --purple-color: #8777d8;
+    background-color: var(--purple-color);
+}
+
+@media (max-width:769px) {
+    .contact-container {
+        gap: 40px;
+    }
+}

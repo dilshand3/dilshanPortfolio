@@ -1,0 +1,45 @@
+.skillTube-container {
+    min-width: 300px;
+    padding: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.skill-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.skill-nameIcon {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.tube-top {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+meter {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+
+meter::-webkit-meter-bar {
+    background: var(--darkbg-color);
+    border-radius: 10px;
+}
+
+meter::-webkit-meter-optimum-value {
+    background: var(--purple-color);
+    border-radius: 10px;
+}
+
+.skillTube-container.animate {
+    opacity: 1;
+    transform: translateY(0);
+}

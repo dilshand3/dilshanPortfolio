@@ -1,0 +1,31 @@
+.VerifyUser {
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.UserAdminContainer {
+    width: max-content;
+    min-width: 250px;
+    padding: 15px 25px;
+    border-radius: 18px;
+    border: 2px solid var(--purple-color);
+    background-color: var(--dark-grey-color);
+}
+
+.VerifyUser::-webkit-scrollbar {
+    display: none;
+}
+
+.VerifyUser small {
+    font-size: 11px;
+}
+
+.user-data {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}

@@ -1,0 +1,33 @@
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 9.3%;
+    position: fixed;
+    width: 100%;
+    background-color: var(--darkbg-color);
+    top: 0;
+    z-index: 1000;
+}
+
+.home-header-title {
+    color: var(--purple-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.home-header-button {
+    background-color: var(--purple-color);
+    color: var(--darkbg-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.home-header a {
+    text-decoration: none;
+}

@@ -1,0 +1,74 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.offer-box {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(0.3px);
+    backdrop-filter: blur(0.3px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.offer-content {
+    margin-top: 10px;
+    background-color: var(--darkbg-color);
+    color: var(--grey-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 90vw;
+    max-width: 500px;
+    text-align: center;
+    height: max-content;
+    margin: auto;
+    position: relative;
+}
+
+.offer-content h4 {
+    font-size: 20px;
+    color: var(--purple-color);
+    text-align: center;
+}
+
+.offer-content p {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.offer-content ul {
+    list-style-position: inside;
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.offer-content li {
+    text-align: left;
+}
+
+.offer-content i.bx-x {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: var(--purple-color);
+    cursor: pointer;
+    font-size: 28px;
+}

@@ -1,0 +1,105 @@
+.education {
+    min-height: 100vh;
+    height: max-content;
+    text-align: center;
+}
+
+.education small {
+    color: var(--grey-color);
+}
+
+.education h1 {
+    color: var(--purple-color);
+}
+
+.education-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+
+.education-box {
+    text-align: left;
+    border-radius: 10px;
+    background-color: var(--light-grey-color);
+    padding-left: 20px;
+    padding: 30px;
+    color: var(--white-color);
+    width: 500px;
+}
+
+.education-box-year p {
+    color: var(--purple-color);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.education-box small {
+    color: var(--grey-color);
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.education-box-description {
+    margin-top: 5px;
+    font-size: 11px;
+}
+
+.education-box-btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: var(--purple-color);
+    color: var(--darkbg-color);
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.education-box-btn:hover {
+    scale: 1.05;
+}
+
+@media (max-width:768px) {
+    .education-box-description {
+        font-size: 9px;
+    }
+}
+
+
+.fade-in {
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

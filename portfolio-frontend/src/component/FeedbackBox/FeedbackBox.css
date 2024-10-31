@@ -1,0 +1,17 @@
+.dlt-feedback {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.dlt-feedback:hover {
+    color: var(--purple-color);
+}
+
+.AdminFeedback {
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid var(--purple-color);
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+}

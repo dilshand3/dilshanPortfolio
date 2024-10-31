@@ -1,0 +1,100 @@
+.home-container {
+    background-color: var(--darkbg-color);
+    padding-bottom: 50px;
+    /* min-height: 100vh; */
+    height: 100vh;
+    height: max-content;
+}
+
+.home-main-content {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.home-main-content h4 {
+    color: var(--grey-color);
+    margin-top: 40px;
+}
+
+.home-main-content h1 {
+    color: var(--white-color);
+    margin-top: 1vh;
+}
+
+.home-main-content p {
+    color: var(--white-color);
+    font-size: 7vw;
+    margin-bottom: 4vh;
+}
+
+.home-main-content img {
+    border-radius: 100%;
+    border: 5px solid var(--purple-color);
+    cursor: pointer;
+}
+
+.resume-btn {
+    background-color: var(--purple-color);
+    color: var(--darkbg-color);
+    border: 3.5px solid var(--purple-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.contact-btn {
+    background-color: transparent;
+    color: var(--purple-color);
+    border: 3px solid var(--purple-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.contact-btn:hover{
+    --purple-color: #9285d3;
+    background-color: var(--purple-color);
+    color: var(--darkbg-color);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .home-main-content p {
+        font-size: 9vw;
+    }
+}
+
+body.no-scroll {
+    overflow-y: hidden;
+}
+
+.animated-title,
+.animated-role {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 1s forwards;
+    animation-delay: 0.3s; 
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

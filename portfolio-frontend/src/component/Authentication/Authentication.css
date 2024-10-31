@@ -1,0 +1,98 @@
+.authentication-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(0.3px);
+    backdrop-filter: blur(0.3px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.authentication-form {
+    text-align: center;
+    color: var(--purple-color);
+    width: 80vw;
+    max-width: 400px;
+    background-color: var(--darkbg-color);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.authentication-form header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.authentication-form header i {
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--grey-color);
+}
+
+.authentication-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.authentication-form input {
+    padding: 10px;
+    border: 1px solid var(--grey-color);
+    border-radius: 4px;
+    background-color: var(--white-color);
+    color: var(--darkbg-color);
+    font-size: 16px;
+}
+
+.authentication-form button {
+    padding: 10px;
+    background-color: var(--purple-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.authentication-form button:hover {
+    background-color: darken(var(--purple-color), 10%);
+}
+
+.authentication-form p {
+    margin-top: 20px;
+    color: var(--grey-color);
+}
+
+.authentication-form p span {
+    color: var(--purple-color);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .authentication-form {
+        width: 50vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    .authentication-form {
+        width: 30vw;
+    }
+}
+
+.authentication-form .error-message {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}

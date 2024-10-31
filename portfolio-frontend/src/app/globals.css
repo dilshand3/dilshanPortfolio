@@ -1,0 +1,48 @@
+:root {
+  --purple-color: #a395e9;
+  --darkbg-color: #0b111e;
+  --grey-color: #babec4;
+  --white-color: #f0f2f4;
+  --dark-grey-color: #151c28;
+  --light-grey-color: #151c28;
+}
+
+* {
+  font-family: poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--darkbg-color);
+}
+
+.body-main {
+  margin-top: 90px;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--darkbg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--purple-color);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--purple-color);
+}
+
+@media only screen and (max-widt:768px) {
+  .footer-nav{
+      display: none;
+  }
+}

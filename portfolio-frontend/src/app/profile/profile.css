@@ -1,0 +1,74 @@
+.profile-page {
+  height: max-content;
+}
+
+.profile-container {
+  margin: auto;
+  width: 40%;
+  margin-top: 30px;
+  min-width: 350px;
+  min-height: 80%;
+  height: max-content;
+  border: 5px solid var(--dark-grey-color);
+  margin-top: 8%;
+  border-radius: 18px;
+  text-align: center;
+  color: var(--purple-color);
+  padding: 20px;
+  padding-bottom: 30px;
+}
+
+.profile-information {
+  background-color: var(--dark-grey-color);
+  border-radius: 10px;
+  margin-top: 15px;
+  text-align: left;
+  padding: 25px;
+}
+
+.profile-information p {
+  color: whitesmoke;
+  font-size: 15px;
+  padding-top: 5px;
+}
+
+.logout-btn {
+  background-color: var(--purple-color);
+  color: var(--darkbg-color);
+  font-weight: bolder;
+  width: 100%;
+  padding: 14px 0px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+}
+
+.logout-btn:hover {
+  --purple-color: #8574d6;
+  background-color: var(--purple-color);
+}
+
+
+.loader {
+  border: 5px solid var(--purple-color);
+  border-top: 5px solid var(--darkbg-color);
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  animation: spin 1.5s linear infinite;
+  margin-top: 30px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
