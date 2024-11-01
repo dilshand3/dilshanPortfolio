@@ -1,9 +1,11 @@
 import { create } from "zustand";
 import { toast } from "react-hot-toast";
+import LoadingImg from "../assets/Images/LoadingImg.png"
 
 const API_BASE_URL = "http://localhost:3131/api"; // Define the base URL
 
 export const useAuth = create((set, get) => ({
+    LoadingImg: LoadingImg,
     githubURL: "https://github.com/dilshand3",
     instagramURL: "https://www.instagram.com/dilshan.d3?igsh=OTI2MXJneWtraWZo",
     linkedinURL: "https://www.linkedin.com/in/dilshan-dilshan-79452a31a/",

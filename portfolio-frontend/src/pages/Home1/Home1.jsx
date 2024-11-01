@@ -6,10 +6,9 @@ import { useAuth } from '@/store/useAuth';
 import EmailVerificationPage from '@/component/EmailVerification/EmailVerification.jsx';
 import Image from 'next/image';
 import Link from 'next/link';
-import LoadingImg from "../../assets/Images/LoadingImg.png";
 
 const Home1 = ({ profileImg, myCV }) => {
-    const { showAuthentication, toggleAuthentication, isSignUp, shareAdmin } = useAuth();
+    const { showAuthentication, toggleAuthentication, isSignUp, shareAdmin, LoadingImg } = useAuth();
     const [showEmailVerification, setShowEmailVerification,] = useState(false);
     const animatedRoleRef = useRef(null);
     const [AdminData, setAdminData] = useState([]);

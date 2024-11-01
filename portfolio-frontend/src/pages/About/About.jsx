@@ -3,9 +3,10 @@ import React, { useEffect, useRef, } from 'react';
 import "./About.css";
 import About1 from "@/component/Aboutbox/About1"
 import Image from 'next/image';
-import LoadingImg from "../../assets/Images/LoadingImg.png";
+import { useAuth } from '@/store/useAuth';
 
 const About = ({ aboutImg }) => {
+    const { LoadingImg } = useAuth()
     const animatedDescriptionRef = useRef(null);
     const animatedImageRef = useRef(null);
     const animatedButtonRef = useRef(null);
