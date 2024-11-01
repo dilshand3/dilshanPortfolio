@@ -3,7 +3,7 @@ import React, { useEffect, useRef, } from 'react';
 import "./About.css";
 import About1 from "@/component/Aboutbox/About1"
 import Image from 'next/image';
-import loadingImg from "@/assets/images/loadingimg.png"
+import loadingImg from "@/assets/Images/LoadingImg.png"
 
 const About = ({ aboutImg }) => {
     const animatedDescriptionRef = useRef(null);
