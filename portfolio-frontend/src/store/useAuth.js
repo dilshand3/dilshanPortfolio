@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { toast } from "react-hot-toast";
-import LoadingImg from "../assets/Images/LoadingImg.png"
+import LoadingImg from "../../public/assets/Images/LoadingImg.jpg"
 
 const API_BASE_URL = "http://localhost:3131/api"; // Define the base URL
 
