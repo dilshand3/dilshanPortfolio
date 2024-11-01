@@ -62,7 +62,7 @@ const About = ({ aboutImg }) => {
                 <h2>About Me</h2>
             </header>
             <div className="about-profile">
-                <Image className="about-profile-img" src={aboutImg || loadingImg} alt="profile" ref={animatedImageRef} height={300} width={300} priority />
+                <Image className="about-profile-img" src={aboutImg || LoadingImg} alt="profile" ref={animatedImageRef} height={300} width={300} priority />
                 <div className="about-info">
                     <div className="about-stats">
                         <About1 icon="bx bx-medal" title="Experience" value="1+ Year Working" />
