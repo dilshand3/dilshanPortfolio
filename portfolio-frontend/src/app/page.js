@@ -15,7 +15,7 @@ export default function Home() {
 
   useEffect(() => {
     shareAdmin();
-  }, [])
+  }, [shareAdmin])
 
   return (
     <>

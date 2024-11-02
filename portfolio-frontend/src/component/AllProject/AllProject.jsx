@@ -10,7 +10,7 @@ const AllProject = () => {
 
     useEffect(() => {
         AllProject();
-    }, []);
+    }, [AllProject]);
     return (
         <>
             <div className='UserProject'>

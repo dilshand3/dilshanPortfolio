@@ -10,7 +10,7 @@ import AdminImg from '@/component/AdminImg/AdminImg.jsx';
 import NonVerifyUserAdmin from '@/component/NonVerifyUser/NonVerifyUser.Admin';
 import { toast,Toaster } from 'react-hot-toast';
 
-const page = () => {
+const Page = () => {
   const router = useRouter();
   const [userDetails, setUserDetails] = useState(null);
   const [category, setActiveCategory] = useState("admin")
@@ -114,4 +114,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

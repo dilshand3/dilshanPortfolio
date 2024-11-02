@@ -71,7 +71,7 @@ const About = ({ aboutImg }) => {
                         <About1 icon="bx bx-support" title="Support" value="Online 24/7" />
                     </div>
                     <p ref={animatedDescriptionRef} className="about-description">
-                        I'm a Software Developer skilled in building web apps, UI/UX designs, and developing Android and IOS apps. Currently, I’m in the second year of my Bachelor's in Computer Applications.
+                        I&apos;m a Software Developer skilled in building web apps, UI/UX designs, and developing Android and IOS apps. Currently, I&apos;m in the second year of my Bachelor&apos;s in Computer Applications.
                     </p>
                     <button
                         ref={animatedButtonRef}

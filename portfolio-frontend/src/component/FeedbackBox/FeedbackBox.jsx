@@ -14,7 +14,7 @@ const FeedbackBox = () => {
 
     useEffect(() => {
         loadFeedbacks();
-    }, [fetchAllFeedback]);
+    }, [fetchAllFeedback, loadFeedbacks]);
 
     const handleDelete = async (feedbackId) => {
         await deleteFeedback(feedbackId)

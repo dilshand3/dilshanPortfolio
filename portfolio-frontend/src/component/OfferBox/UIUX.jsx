@@ -7,7 +7,7 @@ const UIUX = ({ onClose }) => {
       <div className="offer-content">
         <i className='bx bx-x' onClick={onClose}></i>
         <h4>UI/UX Design</h4>
-        <p>I design and develop the consumer products with creative ability and hands-on approach which stisfies the customers' and markets' needs and trends.</p>
+        <p>I design and develop the consumer products with creative ability and hands-on approach which stisfies the customers and markets needs and trends.</p>
         <ul>
           <li><i className='bx bx-check-circle'></i> I develop the user interfaces.</li>
           <li><i className='bx bx-check-circle'></i> Web Page design and development.</li>

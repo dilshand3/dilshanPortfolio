@@ -70,7 +70,7 @@ const EmailVerificationPage = ({ onVerificationSuccess}) => {
             const verificationCode = code.join("");
             verifyEmailCode(verificationCode);
         }
-    }, [code]);
+    }, [code, verifyEmailCode]);
 
     const handleSubmit = (e) => {
         e.preventDefault();

@@ -10,7 +10,7 @@ const AdminImg = () => {
 
   useEffect(() => {
     shareAdmin();
-  }, [])
+  }, [shareAdmin])
 
   const handleFileSelect = (event, type) => {
     const file = event.target.files[0];

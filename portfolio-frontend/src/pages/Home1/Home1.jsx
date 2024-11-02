@@ -19,7 +19,7 @@ const Home1 = ({ profileImg, myCV }) => {
             setAdminData(data);
         }
         fetchAdminData();
-    }, []);
+    }, [shareAdmin]);
 
     useEffect(() => {
         if (showAuthentication) {
@@ -76,7 +76,7 @@ const Home1 = ({ profileImg, myCV }) => {
 
                         <Image src={profileImg || LoadingImg} alt="profile" height={300} width={300} priority />
                         <h4>Hello</h4>
-                        <h1 className="animated-title">I'm <strong style={{ color: "var(--purple-color)" }}>Dilshan</strong></h1>
+                        <h1 className="animated-title">I&apos;m <strong style={{ color: "var(--purple-color)" }}>Dilshan</strong></h1>
                         <p ref={animatedRoleRef} className="animated-role">Software Developer</p>
                         <div className='home-main-btn'>
                             <Link href={`${myCV}`} className='resume-btn' target='_blank'>Watch Resume</Link>

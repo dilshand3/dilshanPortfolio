@@ -9,7 +9,7 @@ const WebProject = () => {
 
     useEffect(() => {
         AllProject();
-    }, []);
+    }, [AllProject]);
 
     const AppProjects = projects?.filter(project => project.projectCategory === "app") || [];
     return (
