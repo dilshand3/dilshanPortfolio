@@ -20,7 +20,7 @@ const Project = () => {
 
   return (
     <div className='project' id='project'>
-      <small>What I've done</small>
+      <small>What I&apos;ve done</small>
       <h2>Recent Works</h2>
       <div className="button-container">
         <button
