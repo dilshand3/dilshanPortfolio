@@ -16,6 +16,10 @@ app.use(cookieParser());
 app.use(express.json({limit : "16kb"}));
 app.use(express.urlencoded({extended : true}))
 
+app.get("/",(req,res) => {
+    res.send("i am running on port ")
+})
+
 //project route
 import projectRoute from "./routes/project.route.js";
 app.use("/api/project",projectRoute)
