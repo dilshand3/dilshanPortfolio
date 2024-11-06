@@ -16,7 +16,7 @@ app.use(cookieParser());
 app.use(express.json({limit : "16kb"}));
 app.use(express.urlencoded({extended : true}))
 
-app.get("/",(req,res) => {
+app.get("/home",(req,res) => {
     res.send("i am running on port ")
 })
 
