@@ -55,9 +55,9 @@ const Education = () => {
       <small>What I studied</small>
       <h2>Education Background</h2>
       <div className="education-container">
-        <Educationbox year="2023-2024*" title="Bachelor of Computer Applications" institute="skd university, hanumangrh" description="*It provides students with foundational knowledge in programming, software development, and web technologies, alongside essential skills in databases." />
-        <Educationbox year="2022-2024" title="+2 Science [PCM+B]" institute="goverment sen sec school, rawatsar" description="*Completed +2 Science with PCM+B subjects, gaining a strong foundation in science and mathematics. But I have a strong interest in computer science and programming." />
-        <Educationbox year="2023-2023" title="Rajsthan State Cetificate of Inforamtion and Technology" institute="arun computer center, rawatsar" description="*Completed RS-CIT course,gaining knowledge and practical knowledge of computer fundamentals." />
+        <Educationbox year="2023-2024*" percentage="74% Marks"  title="Bachelor of Computer Applications" institute="skd university, hanumangrh" description="*It provides students with foundational knowledge in programming, software development, and web technologies, alongside essential skills in databases." />
+        <Educationbox year="2022-2024"  percentage="82% Marks" title="+2 Science [PCM+B]" institute="goverment sen sec school, rawatsar" description="*Completed +2 Science with PCM+B subjects, gaining a strong foundation in science and mathematics. But I have a strong interest in computer science and programming." />
+        <Educationbox year="2023-2023"  percentage="83% Marks" title="Rajsthan State Cetificate of Inforamtion and Technology" institute="arun computer center, rawatsar" description="*Completed RS-CIT course,gaining knowledge and practical knowledge of computer fundamentals." />
       </div>
     </div>
   )

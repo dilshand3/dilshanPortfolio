@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState, useRef } from 'react'
 
-const Educationbox = ({ year, title, institute, description }) => {
+const Educationbox = ({ year, title, institute, description,percentage }) => {
     const [isVisible, setIsVisible] = useState(false);
     const boxRef = useRef(null);
 
@@ -34,7 +34,7 @@ const Educationbox = ({ year, title, institute, description }) => {
                 <small>{institute.toUpperCase()}</small>
                 <p className='education-box-description'>{description}</p>
             </div>
-            <button className='education-box-btn'>See certificate</button>
+            <button className='education-box-btn'>{percentage}</button>
         </div>
     )
 }
