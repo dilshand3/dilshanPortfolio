@@ -8,7 +8,7 @@ export const generateTokenAndSetCookie = async (res, userId) => {
    await res.cookie("token", token, {
         httpOnly: true,
         secure:true,
-        sameSite: "strict",
+        sameSite: "Lax",
         maxAge: 7 * 20 * 60 * 60 * 1000
     })
     return token
