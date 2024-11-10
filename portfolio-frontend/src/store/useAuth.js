@@ -2,7 +2,7 @@ import { create } from "zustand";
 import { toast } from "react-hot-toast";
 import LoadingImg from "../../public/assets/Images/LoadingImg.jpg"
 
-const API_BASE_URL = "http://localhost:3131/api"; // Define the base URL
+const API_BASE_URL = "https://dilshan-d3.onrender.com/api";
 
 export const useAuth = create((set, get) => ({
     LoadingImg: LoadingImg,
