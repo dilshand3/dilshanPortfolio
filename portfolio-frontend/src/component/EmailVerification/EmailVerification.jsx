@@ -39,7 +39,7 @@ const EmailVerificationPage = ({ onVerificationSuccess}) => {
 
     const verifyEmailCode = async (verificationCode) => {
         try {
-            const response = await fetch('http://localhost:3131/api/user/verifyEmail', {
+            const response = await fetch('https://dilshan-d3.onrender.com/api/user/verifyEmail', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
